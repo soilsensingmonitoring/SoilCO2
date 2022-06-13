@@ -1,0 +1,1 @@
+"./co2.obj" "./i2c.obj" "./main.obj" "./pressure.obj" "./seesaw.obj" "./spi.obj" "./timer.obj" "./wireless.obj" "../lnk_msp430fr2355.cmd" -lfrwp_init.a -llibc.a 

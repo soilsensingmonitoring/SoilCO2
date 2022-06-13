@@ -1,0 +1,61 @@
+Altium Designer Pick and Place Locations
+C:\Users\Kevin\Documents\SoilScience\SoilMoistureSensorv2\Project Outputs\Pick Place\Pick Place for SoilMoistureSensorv2.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       02/06/22
+Time:       19:07
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description","LCSC Part #"
+"TP9","TP","TopLayer","Test_Point","55,5000","25,7500","90","SMD TEST POINT",""
+"TP8","TP","TopLayer","Test_Point","43,9955","16,7072","90","SMD TEST POINT",""
+"TP7","TP","TopLayer","Test_Point","45,2500","26,5000","90","SMD TEST POINT",""
+"TP6","TP","TopLayer","Test_Point","55,5000","11,7500","90","SMD TEST POINT",""
+"TP5","TP","TopLayer","Test_Point","43,7488","2,3500","90","SMD TEST POINT",""
+"TP4","TP","TopLayer","Test_Point","44,7500","12,2500","90","SMD TEST POINT",""
+"TP3","TP","TopLayer","Test_Point","55,5000","39,7500","90","SMD TEST POINT",""
+"TP2","TP","TopLayer","Test_Point","45,2500","31,2500","90","SMD TEST POINT",""
+"TP1","TP","TopLayer","Test_Point","45,2500","41,0000","90","SMD TEST POINT",""
+"R9","DNP","TopLayer","J1-0603","54,7000","3,0000","0","Resistor",""
+"LORA","Header_6 - LORA","TopLayer","Pin_Header_LORA","12,7500","18,7300","270","Header, 6-Pin",""
+"DPS310 PRESSURE","Header_7 - DPS310","TopLayer","Pin_Header_DPS310","29,2900","6,0000","0","Header, 7-Pin",""
+"SCD-30 TEMP/HUM/CO2","Header_6 - SCD-30","TopLayer","Pin_Header_SCD-30","30,4800","25,7500","0","Header, 6-Pin",""
+"S7V8A","Pololu S7V8","TopLayer","Pin_Header_S7V8","8,9800","33,0000","0","Header, 4-Pin",""
+"C6","22µF","TopLayer","SMD-0805C","54,0382","21,4802","0","CAP CER 22UF 10V X5R 0805","C45783"
+"C5","10µF","TopLayer","SMD-0805C","48,4382","21,4802","0","CAP CER 10UF 10V X7R 0805","C440198"
+"C4","22µF","TopLayer","SMD-0805C","53,7000","7,5000","0","CAP CER 22UF 10V X5R 0805","C45783"
+"C3","10µF","TopLayer","SMD-0805C","48,1000","7,5000","0","CAP CER 10UF 10V X7R 0805","C440198"
+"C2","22µF","TopLayer","SMD-0805C","53,7000","36,0000","0","CAP CER 22UF 10V X5R 0805","C45783"
+"C1","10µF","TopLayer","SMD-0805C","48,1000","36,0000","0","CAP CER 10UF 10V X7R 0805","C440198"
+"U3","TPS62082DSGR","TopLayer","DSG8_1P6X0P9","51,2382","21,4802","90","","C485809"
+"U2","TPS62082DSGR","TopLayer","DSG8_1P6X0P9","50,9000","7,5000","90","","C485809"
+"U1","TPS62082DSGR","TopLayer","DSG8_1P6X0P9","50,9000","36,0000","90","","C485809"
+"R16","R_0","TopLayer","J1-0603","52,2882","16,9302","0","Resistor","C21189"
+"R15","R10K","TopLayer","J1-0603","49,5382","16,9302","180","Resistor","C25804"
+"R14","DNP","TopLayer","J1-0603","55,0382","16,9302","0","Resistor",""
+"R13","R180K","TopLayer","J1-0603","46,5000","28,2500","270","Resistor","C22827"
+"R12","DNP","TopLayer","J1-0603","44,5382","21,1802","90","Resistor",""
+"R11","R_0","TopLayer","J1-0603","51,9500","2,9500","0","Resistor","C21189"
+"R10","R10K","TopLayer","J1-0603","49,2000","2,9500","180","Resistor","C25804"
+"R8","R180K","TopLayer","J1-0603","46,2500","13,7500","270","Resistor","C22827"
+"R7","DNP","TopLayer","J1-0603","44,2000","7,2000","90","Resistor",""
+"R6","R_0","TopLayer","J1-0603","51,9500","31,4500","0","Resistor","C21189"
+"R5","DNP","TopLayer","J1-0603","49,2000","31,4500","180","Resistor",""
+"R4","DNP","TopLayer","J1-0603","54,7000","31,4500","0","Resistor",""
+"R3","R180K","TopLayer","J1-0603","46,5000","42,0000","270","Resistor","C22827"
+"R2","R10K","TopLayer","J1-0603","44,2000","35,7000","90","Resistor","C25804"
+"R1","DNP","TopLayer","J1-0603","11,2500","29,2500","270","Resistor",""
+"SS4","SEESAW_4","TopLayer","Pin_Header_1x4_TH_Pitch_2.54mm","50,9700","55,5000","180","Header, 4-Pin",""
+"SS3","SEESAW_3","TopLayer","Pin_Header_1x4_TH_Pitch_2.54mm","50,9700","52,3000","180","Header, 4-Pin",""
+"SS2","SEESAW_2","TopLayer","Pin_Header_1x4_TH_Pitch_2.54mm","50,9300","49,1000","180","Header, 4-Pin",""
+"SS!","SEESAW_1","TopLayer","Pin_Header_1x4_TH_Pitch_2.54mm","50,9300","45,9000","180","Header, 4-Pin",""
+"L3","IND 1.0uH","TopLayer","INDP4340X15N","51,2500","25,5000","180","SLO0415S1R0MTT","C325988"
+"L2","IND 1.0uH","TopLayer","INDP4340X15N","51,2500","11,7500","180","SLO0415S1R0MTT","C325988"
+"L1","IND 1.0uH","TopLayer","INDP4340X15N","51,0000","40,0000","180","SLO0415S1R0MTT","C325988"
+"SERVO","SERVO_BUS","TopLayer","HDR1X3","13,0400","50,2500","180","Header, 3-Pin",""
+"MSP-EXP430","MSP_CONNECTOR_LEFT","TopLayer","HDR2X10","7,2700","17,2700","270","Header, 10-Pin, Dual row",""
+"BATTERY","Battery Connector","TopLayer","JST-S2B-PH-K-S_V","5,7500","50,5500","180","Male Header, Pitch 2 mm, 1 x 2 Position, Height 4.8 mm, Tail Length 3.4 mm, -25 to 85 degC, RoHS, Bulk",""

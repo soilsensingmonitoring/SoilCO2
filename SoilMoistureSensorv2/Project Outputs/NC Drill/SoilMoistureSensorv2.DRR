@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: SoilMoistureSensorv2.PcbDoc   6/2/2022  7:07:27 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : SoilMoistureSensorv2.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.254mm)                                           Round             6         PTH        1.22inch (30.87mm)
+T2      28mil (0.7mm)                                             Round             2         PTH        0.08inch (2.00mm)
+T3      28mil (0.711mm)                                           Round             27        PTH        8.62inch (218.99mm)
+T4      35mil (0.9mm)                                             Round             23        PTH        4.47inch (113.60mm)
+T5      39mil (1mm)                                               Round             39        PTH        9.38inch (238.33mm)
+T6      45mil (1.152mm)                                           Round             4         NPTH       5.27inch (133.89mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              101
+
+Total Processing Time (hh:mm:ss) : 00:00:00

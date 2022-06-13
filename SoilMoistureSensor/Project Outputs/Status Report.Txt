@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [SoilMoistureSensor.PcbDoc]
+   Generated File[SoilMoistureSensor.TXT]
+   Generated File[SoilMoistureSensor.LDP]
+   Generated File[SoilMoistureSensor.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:59:13 AM On 5/11/2022

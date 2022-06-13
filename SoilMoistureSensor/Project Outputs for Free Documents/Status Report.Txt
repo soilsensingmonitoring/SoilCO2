@@ -1,0 +1,23 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:57:58 AM On 5/11/2022
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [SoilMoistureSensor.PcbDoc]
+   Generated File[SoilMoistureSensor.GTO]
+   Generated File[SoilMoistureSensor.GTS]
+   Generated File[SoilMoistureSensor.GTL]
+   Generated File[SoilMoistureSensor.GBL]
+   Generated File[SoilMoistureSensor.GBS]
+   Generated File[SoilMoistureSensor.GBO]
+   Generated File[SoilMoistureSensor.GM1]
+   Generated File[SoilMoistureSensor.GD1]
+   Generated File[SoilMoistureSensor.EXTREP]
+   Generated File[SoilMoistureSensor.REP]
+
+
+Files Generated   : 10
+Documents Printed : 0
+
+Finished Output Generation At 1:58:01 AM On 5/11/2022
