@@ -24,24 +24,28 @@ int main(void) {
     while(1) {
 
         // power pins for sensors
-        P5DIR |= BIT3;
+        P5DIR |= BIT3; //3V3_SENSORS_EN
         P5DIR |= BIT2;
         P4DIR |= BIT5;
-        P3DIR |= BIT4 | BIT6;
+        P3DIR |= BIT4; //3V3_LORA_EN
+	P3DIR |= BIT6; //SERVO_GPIO_EN
 
-        P5OUT |= BIT3;
-        P3OUT |= BIT4 | BIT6;
-        P5OUT |= BIT2;
-        P4OUT |= BIT5;
+        P5OUT &= ~BIT3;
+        P3OUT &= ~BIT4;
+	P3OUT &= ~BIT6;
+        P5OUT &= ~BIT2;
+        P4OUT &= ~BIT5;
 
         // PWM for servo motor
         P3DIR |= BIT1;
         P3OUT &= ~BIT1;
 
         // turn on all sensors
-        P5OUT &= ~BIT2;
-        P3OUT &= ~BIT6;
-        P4OUT &= ~BIT5;
+        P5OUT |= BIT2;
+	P5OUT |= BIT3; //3V3_SENSORS_EN
+        P3OUT |= BIT4; //3V3_LORA_EN
+	P30UT |= BIT6; //SERVO_GPIO_EN
+        P4OUT |= BIT5;
 
         // start up the SPI and I2C bus
         initGPIO_SPI();
@@ -78,23 +82,25 @@ int main(void) {
             read_data_co2();
 
         // turn off sensors
-        P5OUT |= BIT2;
-        P3OUT |= BIT6;
-        P4OUT |= BIT5;
+        P5OUT &= ~BIT2;
+	P5OUT &= ~BIT3; //3V3_SENSORS_EN
+	P3OUT &= ~BIT4; //3V3_LORA_EN
+        P3OUT &= ~BIT6; //SERVO_GPIO_EN
+        P4OUT &= ~BIT5;
 
         // set the module IDs
         wireless_buf[33] = MODULE_ID;
         seesaw_buf[24] = MODULE_ID;
 
         // send wireless data
-        P3OUT &= ~BIT4;
+        P3OUT |= BIT4; //3V3_LORA_EN
         __delay_cycles(1000);
         while(!init_wireless());
         // must send in two bursts, we have too much data to send all at once
         wireless_send(wireless_buf, 35); // send pressure and CO2 data
         __delay_cycles(100000); // give it some time to send
         wireless_send(seesaw_buf, 26); // send moisture data
-        P3OUT |= BIT4;
+        P3OUT &= ~BIT4; //3V3_LORA_EN
 
         pulses = 0;
         if (iteration == 6) // open for 1/2 hour, closed for 1/2 hour

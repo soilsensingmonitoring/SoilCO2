@@ -7,7 +7,8 @@
 
 #include "main.h"
 
-#define NUM_SEESAWS 4
+//changed to one sensor
+#define NUM_SEESAWS 1
 
 void read_temp_seesaw() {
 
