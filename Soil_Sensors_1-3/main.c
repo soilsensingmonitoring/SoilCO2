@@ -44,7 +44,7 @@ int main(void) {
         P5OUT |= BIT2;
 	P5OUT |= BIT3; //3V3_SENSORS_EN
         P3OUT |= BIT4; //3V3_LORA_EN
-	P30UT |= BIT6; //SERVO_GPIO_EN
+	P3OUT |= BIT6; //SERVO_GPIO_EN
         P4OUT |= BIT5;
 
         // start up the SPI and I2C bus
@@ -98,7 +98,7 @@ int main(void) {
         while(!init_wireless());
         // must send in two bursts, we have too much data to send all at once
         wireless_send(wireless_buf, 35); // send pressure and CO2 data
-        __delay_cycles(100000); // give it some time to send
+        __delay_cycles(1000); // give it some time to send
         wireless_send(seesaw_buf, 26); // send moisture data
         P3OUT &= ~BIT4; //3V3_LORA_EN
 

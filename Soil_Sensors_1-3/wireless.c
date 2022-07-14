@@ -55,8 +55,10 @@ bool init_wireless(void) {
 
     // set up default configuration - no Sync Words in LORA Mode
     buf[0] = 0x72;
+    //buf[0] = 0x74;
     SPI_Master_WriteReg(RH_RF95_REG_1D_MODEM_CONFIG1, buf, 1);
     buf[0] = 0x74;
+    //buf[0] = 0xa4;
     SPI_Master_WriteReg(RH_RF95_REG_1E_MODEM_CONFIG2, buf, 1);
     buf[0] = 0x04;
     SPI_Master_WriteReg(RH_RF95_REG_26_MODEM_CONFIG3, buf, 1);
