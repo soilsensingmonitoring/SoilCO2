@@ -16,8 +16,8 @@ void init_timer(void) {
 
     // RTC count re-load compare value at 32.
     // 1024/32768 * 19200 = 600 sec -> 10 minutes.
-   // RTCMOD = 19200;
-    RTCMOD = 100;
+    RTCMOD = 19200;
+    //RTCMOD = 100;
 
     // Source = 32kHz crystal, divided by 1024
     RTCCTL = RTCSS__XT1CLK | RTCSR | RTCPS__1024 | RTCIE;
