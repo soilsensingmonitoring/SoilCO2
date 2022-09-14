@@ -32,12 +32,12 @@ void sleep_pins(void) {
     P5DIR = 0xff;
     P6DIR = 0xff;
 
-    P1OUT = 0x00;
-    P2OUT = 0x00;
-    P3OUT = 0x50;
-    P4OUT = 0x20;
-    P5OUT = 0x04;
-    P6OUT = 0x00;
+    P1OUT &= ~0x00;
+    P2OUT &= ~0x00;
+    P3OUT &= ~0x50;
+    P4OUT &= ~0x20;
+    P5OUT &= ~0x04;
+    P6OUT &= ~0x00;
 
     UCB0CTLW0 |= UCSWRST; // put euscib0 into reset
     UCA0CTLW0 |= UCSWRST; // put euscia0 into reset

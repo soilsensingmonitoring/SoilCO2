@@ -4,7 +4,7 @@ uint8_t wireless_buf[35];
 uint8_t seesaw_buf[26];
 bool i2c_succeed;
 
-#define MODULE_ID 4 // change between each flash!
+#define MODULE_ID 3 // change between each flash!
 
 volatile uint8_t pulses;
 
@@ -28,11 +28,11 @@ int main(void) {
         P5DIR |= BIT2;
         P4DIR |= BIT5;
         P3DIR |= BIT4; //3V3_LORA_EN
-	P3DIR |= BIT6; //SERVO_GPIO_EN
+        P3DIR |= BIT6; //SERVO_GPIO_EN
 
         P5OUT &= ~BIT3;
         P3OUT &= ~BIT4;
-	P3OUT &= ~BIT6;
+        P3OUT &= ~BIT6;
         P5OUT &= ~BIT2;
         P4OUT &= ~BIT5;
 
@@ -42,9 +42,9 @@ int main(void) {
 
         // turn on all sensors
         P5OUT |= BIT2;
-	P5OUT |= BIT3; //3V3_SENSORS_EN
+        P5OUT |= BIT3; //3V3_SENSORS_EN
         //P3OUT |= BIT4; //3V3_LORA_EN
-	P3OUT |= BIT6; //SERVO_GPIO_EN
+        P3OUT |= BIT6; //SERVO_GPIO_EN
         P4OUT |= BIT5;
 
         // start up the SPI and I2C bus
@@ -77,14 +77,16 @@ int main(void) {
         i2c_succeed = false;
         while (!i2c_succeed)
             init_co2();
+        
+        
         i2c_succeed = false;
         while (!i2c_succeed)
             read_data_co2();
 
         // turn off sensors
         P5OUT &= ~BIT2;
-	P5OUT &= ~BIT3; //3V3_SENSORS_EN
-	P3OUT &= ~BIT4; //3V3_LORA_EN
+        P5OUT &= ~BIT3; //3V3_SENSORS_EN
+        P3OUT &= ~BIT4; //3V3_LORA_EN
         P3OUT &= ~BIT6; //SERVO_GPIO_EN
         P4OUT &= ~BIT5;
 
@@ -98,9 +100,9 @@ int main(void) {
         while(!init_wireless());
         // must send in two bursts, we have too much data to send all at once
         wireless_send(wireless_buf, 35); // send pressure and CO2 data
-        __delay_cycles(100000); // give it some time to send
+        __delay_cycles(500000); // give it some time to send
         wireless_send(seesaw_buf, 26); // send moisture data
-	__delay_cycles(100000); // give it some time to send
+        __delay_cycles(100000); // give it some time to send
         P3OUT &= ~BIT4; //3V3_LORA_EN
 
         pulses = 0;
